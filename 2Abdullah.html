@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <title>عبدالله طلعت</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: Arial, sans-serif; /* أضفت عائلة الخط لتوافق أفضل مع متصفحات الويب */
+    }
+    header {
+      background: #f0f0f1;
+      width: 100%;
+      position: fixed;
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 100px;
+    }
+    .logo {
+      text-decoration: none;
+      color: blue;
+      font-weight: 700;
+      font-size: 1.8em;
+      background: #123;
+      padding: 5px 10px;
+      border-radius: 10px;
+      border: 3px solid #36385d;
+      transition: 0.7s ease;
+    }
+    .logo:hover {
+      color: #36c;
+      background: #fff;
+      font-size:1.9em;
+    }
+    .nav a {
+      text-decoration: none;
+      color: blue;
+      font-weight: 500;
+      font-size: 1.1em;
+      padding-left: 30px;
+      padding :13px 8px;
+      border-radius:10px ;
+      background :#f0f9f5;
+      box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+      margin:5px;
+      transition: 0.7s ease;
+    }
+    .nav a:hover {
+      color: #fff;
+      background :#000;
+      font-size:1.3em;
+      
+         } 
+   .nav a span:hover {
+    color:#601cfc;
+   }
+    section {
+      padding: 100px 0; /* حذفت الهامش الأيمن والأيسر */
+    }
+    .main {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: #233;
+      color: #fff; /* أضفت لون النص */
+      padding: 0 200px; /* ضبطت الهامش */
+    }
+    .main-btn {
+      background-color: #3a6cf4;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      display: inline-block;
+      letter-spacing: 1px;
+      margin-bottom: 40px;
+      transition: 0.7s ease;
+    }
+    .main-btn:hover {
+      background-color: blue;
+      transform: scale(1.1);
+    }
+    .main h2 {
+      font-size: 1.4em;
+      font-weight: 500;
+    }
+    .main h2 span {
+      color: #4e9eff;
+      font-size: 3em;
+      font-weight: 600;
+    }
+    .main h3 {
+      font-size: 2em;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+    }
+    .s-i a {
+      font-size: 1.7em;
+      padding-right: 30px;
+      transition: 0.7s ease;
+      color: #fff; /* أضفت لون النص */
+    }
+    .s-i a:hover {
+      font-size: 2em;
+    }
+    .s-i1 a {
+    font-size: 1.7em;
+    padding-right: 30px;
+    transition: 0.7s ease;
+    color: #fff; /* أضفت لون النص */
+    
+    }
+    .s-i1 a:hover {
+    font-size: 2em;
+    }
+    .title {
+      text-align: center;
+      color: #4e9eff;
+      font-size: 2.2em;
+      font-weight: 800;
+      margin-bottom: 30px;
+    }
+    .content {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .card {
+      background-color: #fff;
+      width: 21.25em;
+      box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+      padding: 25px;
+      margin: 15px;
+      border-radius: 10px;
+      transition: 0.7s ease;
+      
+    }
+    .card:hover {
+      transform: scale(1.1);
+    }
+    .icon {
+      color: #4e9eff;
+      font-size: 8em;
+      text-align: center;
+    }
+    .info {
+      text-align: center;
+    }
+    .info h3 {
+      color: #4e9eff;
+      font-size: 1.2em;
+      font-weight: 700;
+      margin: 10px;
+      font-weight: 800
+    }
+    .info p{
+      text-align: center;
+      font-weight: 600;
+    }
+    .info1 h3{
+      color: #000;
+font-size: 1.2em;
+font-weight: 700;
+margin: 10px;
+text-align: center;
+font-size: 800;
+    }
+    .info1 p{
+    font-weight: 600
+    }
+    .projects {
+      background-color: #233;
+       /* أضفت لون النص */
+    }
+    .projects .content {
+      margin-top: 30px;
+    }
+    .p-c {
+      background-color: #fff;
+      border: 2px solid #fff;
+      min-height: 14em;
+      width: 23em;
+      overflow: hidden;
+      border-radius: 10px;
+      margin: 20px;
+      transition: 0.7s ease;
+    }
+    .p-c:hover {
+      transform: scale(1.1);
+    }
+    .p-img img {
+      width: 100%;
+    }
+     .p-c:hover .p-img{
+   opacity: 0.9;
+ }
+ .p-info{
+   padding :1em;
+ }
+ .p-ca{
+   font-size: 0.8em;
+   color:#000;
+ }
+ .p-t{
+   display: flex;
+   justify-content: space-between;
+   text-transform: uppercase;
+   font-weight: 800;
+   margin-top: 10px;
+ }
+ .more-details{
+   text-decoration: none ;
+   color: :#4a9eff 
+ }
+ .more-details:hover{
+   color: #601cfc;
+ }
+ .contacts .icon{
+   font-size:4.5em; 
+ }
+ .contacts .info{
+   overflow: 
+ }
+ .contacts .info h3{
+   color: #000;
+ }
+ .contacts .info p{
+   font-size: 1.5em;
+   text-align: center;
+ }
+ .contacts .info1 p{
+   font-size: 1.4em;
+ }
+ header .logo span{
+   color:red;
+ }
+ .footer{
+   background :#233;
+   color: #fff ;
+   padding: 2em;
+   display: flex;
+   justify-content: space-between;
+ }
+ .footer .f-t span{
+   color: orangered;
+ }
+ .footer .f-t{
+   font-size: 1.3em;
+   font-weight: 600; 
+ }
+ .footer .s-i a{
+   font-size: 1.3em;
+ }
+ .footer .s-i a:hover{
+   font-size: 1.7em;
+   
+ }
+ @media (max-width:1023px){
+   header{
+     padding : 12px 20px;
+
+
+   }
+    .nav a {
+      text-decoration: none;
+      color: blue;
+      font-weight: 500;
+      font-size: 1.1em;
+      padding-left: 10px;
+    }
+    .nav a:hover {
+      color: #fff;
+    }
+   .title {
+     font-size: 1.8em;
+   }
+   section {
+     padding: 80px 20px;
+   }
+   .main h2 {
+     font-size: 1em;
+   }
+   .main h3 {
+     font-size: 1.6em;
+   }
+   .content{
+     flex-direction: column;
+     align-items: center;
+   }
+       
+ }
+ @media (max-width:614px) {
+   body {
+     font-size: 14px;
+   }
+   .main h2{
+     font-size: 1.3em;
+     }
+     .main h3{
+     font-size: 1.4em;
+     }
+     .contacts .info1 p {
+  font-size: 1.3em;
+}
+
+       .nav a {
+      padding-left: 10px;
+padding :10px 6px;
+}
+    .nav a:hover {
+      color: #fff;
+      background :#000;
+    }
+    .card .info h3{
+      font-size: 1.5em;
+    }
+    .card .info p{
+      font-size: 1.2em;
+    }
+      .card .info h3 {
+    font-size: 1.4em;
+  }
+
+  .card .info p {
+    font-size: 1em;
+  }
+ }
+ @media (max-width:300px){
+
+ }
+ @media (max-width:500px){
+   body{
+     font-size: 13px;
+   }
+     .nav a {
+      padding-left: 5px;
+
+margin :2px;
+
+padding 0;
+    }
+    .nav a:hover {
+      color: #fff;
+      background :#000;
+    }
+    .s-i1 a {
+    font-size: 1.7em;
+    padding-right: 30px;
+    transition: 0.7s ease;
+    color: #fff; /* أضفت لون النص */
+    display :block;
+     margin-bottom :8px;   
+     
+    }
+    .s-i1 a:hover {
+    font-size: 2em;
+    }
+    main h2{
+      font-size: 1.5em
+    }
+ }
+  
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo"><span>A</span>BDULLA</a>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contacts">Contacts</a>
+    </nav>
+  </header>
+  <section class="main" id="home">
+    <div>
+      <h2>Hello, I'm Abdullah <br><span>Website maker</span></h2>
+      <h3>I build websites <br> by HTML, CSS, and JavaScript</h3>
+      <a href="#projects" class="main-btn">View my work</a>
+      <div class="s-i1">
+        <a href="https://www.tiktok.com/@abdullahtalaat56"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100093531259560"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/bdllhtlt38"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+  <section class="cards" id="services">
+    <h2 class="title">Services</h2>
+    <div class="content">
+      <div class="card">
+        <div class="icon">
+         <i class="fa-brands fa-html5"></i>
+        </div>
+        <div class="info">
+          <h3>HTML</h3>
+          <p>I know the writer of HTML more than the writer of any other programming language because it is the first programming language I learned and I use it to add website elements and I use it on all my websites.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <i class="fa-brands fa-css3-alt"></i>
+        </div>
+        <div class="info">
+          <h3>CSS</h3>
+          <p>I know how to write CSS and use it to make the site more beautiful and have more layout. I used it to build many websites, the most important of which are this and the online play website, etc.</p>
+        </div>
+      </div>
+      <div class="card">
+      <div class="icon">
+      <i class="fa-brands fa-js"></i>
+      </div>
+      <div class="info">
+      <h3>JS</h3>
+      <p>I am an average javascript writer, and I always write it with html and css so that the site will be more interactive and more beautiful, and I used it on the product statistics website.</p>
+      </div>
+      </div>
+      
+      <div class="card">
+      <div class="icon">
+      <i class="fas fa-camera"></i>
+      </div>
+      <div class="info">
+      <h3>Video designer</h3>
+      <p>I design football videos using the capcut program, and the player I design for the most is Cristiano Ronaldo, and I publish design videos on Tiktok.</p>
+      </div>
+      </div>
+      
+    </div>
+  </section>
+  <section id="projects" class="projects">
+    <h2 class="title">Projects</h2>
+    <div class="content">
+
+      <div class="p-c">
+        <div class="p-img">
+          <img src="work(1).jpg" alt="">
+        </div>
+        <div class="p-info">
+          <p class="p-ca">You can play some games online without downloading it</p>
+          <strong class="p-t">
+            <span>Play games online</span>
+            <a href="https://j9r0iafvnpij7acukstlwa.on.drv.tw/games/Play%20games%20online%20by%20Abdulla.html" class="more-details">More details</a>
+          </strong>
+        </div>
+      </div>
+            <div class="p-c">
+        <div class="p-img">
+          <img src="work(1)(1).jpg" alt="">
+        </div>
+        <div class="p-info">
+          <p class="p-ca">You can add many filters through this site, such as saturation filter, contrast filter, etc</p>
+          <strong class="p-t">
+            <span>Add filters to photos</span>
+            <a href="https://j9r0iafvnpij7acukstlwa.on.drv.tw/فلاتر.html" class="more-details">More details</a>
+          </strong>
+        </div>
+      </div>
+      
+            <div class="p-c">
+        <div class="p-img">
+          <img src="work(3).jpg" alt="">
+        </div>
+        <div class="p-info">
+          <p class="p-ca">Through this site, you can count the products included, etc</p>
+          <strong class="p-t">
+            <span>Counting products</span>
+            <a href="https://j9r0iafvnpij7acukstlwa.on.drv.tw/%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%20.html" class="more-details">More details</a>
+          </strong>
+        </div>
+      </div>
+            
+    </div>
+  </section>
+  <section id="contacts" class="contacts">
+    <h2 class="title">To communicate</h2>
+    <div class="content">
+      <div class="card">
+        <div class="icon">
+          <i class="fas fa-phone"></i>
+        </div>
+        <div class="info">
+          <h3>Phone</h3>
+          <p>+201501480908</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div class="info1">
+          <h3>Email</h3>
+    <p>test5test55555555@gmali.com</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+<footer class="footer">
+  <p class="f-t">Copyrights @ <span>Abdullah Talaat</span></p>
+      <div class="s-i">
+        <a href="https://www.tiktok.com/@abdullahtalaat56"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100093531259560"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/bdllhtlt38"><i class="fab fa-instagram"></i></a>
+      </div>
+
+</footer>
+</body>
+</html>
